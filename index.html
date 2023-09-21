@@ -37,8 +37,8 @@
         .divs{
             /* background-color: white; */
             margin-top: 5px;
+            margin-bottom: 5px;
             display: grid;
-            grid-template-columns: 1fr 1fr;
             text-align: center;
             column-gap: 10px;
             /* place-items: center; */
@@ -47,13 +47,41 @@
         .box{
             background-color: pink;
             width: 100%;
-            height: 50px;
+            height: fit-content;
+            min-height: 50px;
             
+        }
+        
+        .div1{
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .div2, .div6{
+            grid-template-columns: 1fr 1fr;
         }
 
         .d3-img{
             background-color: gold;
             grid-column: span 2;
+        }
+
+        .div4-grid, .div5-grid, .div7-grid{
+            display: grid;
+            background-color: white;
+            column-gap: 5px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .div8-grid{
+            display: grid;
+            background-color: white;
+            column-gap: 5px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .div8-grid div:first-child {
+            grid-column: span 2;
+
         }
 
     </style>
@@ -67,62 +95,81 @@
     <div class="content">
         <div class="divs div1">
             <div class="box"> img1.1</div>
-            <div class="box"> content1.1</div>
-        </div>
-        <div class="divs div2">
-            <div class="box"> img1.2</div>
             <div class="box"> content1.2</div>
         </div>
+        <div class="divs div2">
+            <div class="box"> img2.1</div>
+            <div class="box"> content2.2</div>
+        </div>
         <div class="divs div3">
-            <div class="box"> content1.3</div>
-            <div class="box"> content1.3</div>
-            <div class="box d3-img"> img1.3</div>
+            <div class="box"> content3.1</div>
+            <div class="box"> content3.2</div>
+            <div class="box d3-img"> img3.3</div>
         </div>
         <div class="divs div4">
-            <div class="box"> img1.4</div>
-            <div class="box"> content1.4</div>
+            <div class="box"> content4.1</div>
+            <div class="box"> content4.2</div>
+            <div class="box div4-grid"> 
+                <div> 4.3.1</div>
+                <div> 4.3.2</div>
+                <div> 4.3.3</div>
+            </div>
         </div>
         <div class="divs div5">
-            <div class="box"> content1.5</div>
+            <div class="box"> content5.1</div>
+            <div class="box"> content5.2</div>
+            <div class="box div5-grid"> 
+                <div> 5.3.1</div>
+                <div> 5.3.2</div>
+                <div> 5.3.3</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overflow">
+        <div class="content">
+            <div class="divs div6">
+                <div class="box"> content6.1</div>
+                <div class="box"> content6.2</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="divs div7">
+            <div class="box"> content7.1</div>
+            <div class="box"> content7.2</div>
+            <div class="box"> content7.3</div>
+            <div class="box div7-grid"> 
+                <div> 7.4.1</div>
+                <div> 7.4.2</div>
+                <div> 7.4.3</div>
+            </div>
         </div>
     </div>
 
     <div class="overflow">
         <div class="content">
             <div class="divs">
-                <div class="box"> img</div>
-                <div class="box"> content</div>
+                <div class="box"> contact us</div>
+                <div class="box"> Get in Touch</div>
+                <div class="box"> Form</div>
+                <div class="box div8-grid"> 
+                    <div> 8.4.1</div>
+                    <div> 8.4.2</div>
+                    <div> 8.4.3</div>
             </div>
-            <div class="divs">
-                <div class="box"> img</div>
-                <div class="box"> content</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="content">
-        <div class="divs">
-            div2.1
-        </div>
-        <div class="divs">
-            div2.2
-        </div>
-    </div>
-
-    <div class="overflow">
-        <div class="content">
-            <div class="divs">
-                overflow div2.1
-            </div>
-            <div class="divs">
-                overflow div2.1
             </div>
         </div>
     </div>
 
     <div class="content">
-        <div class="divs">
-            footer div
+        <div class="divs div8-grid">
+            <div class="box"> content8.1</div>
+            <div class="box"> content8.2</div>
+            <div class="box"> content8.3</div>
+            <div class="box"> content8.4</div>
+            <div class="box"> content8.5</div>
         </div>
     </div>
 
