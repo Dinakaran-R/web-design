@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cogniyon</title>
+    <style>
+
+        body{
+            background-color: green;
+            
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+
+        }
+
+        .header{
+            background-color: white;
+            width: 50vw;
+        }
+
+        .content{
+            /* background-color: red; */
+            width: 50vw;
+        }
+
+        .overflow{
+            background-color: grey;
+            width: 100%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .divs{
+            /* background-color: white; */
+            margin-top: 5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            column-gap: 10px;
+            /* place-items: center; */
+        }
+
+        .box{
+            background-color: pink;
+            width: 100%;
+            height: 50px;
+            
+        }
+
+        .d3-img{
+            background-color: gold;
+            grid-column: span 2;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        Header
+    </div>
+    
+    <div class="content">
+        <div class="divs div1">
+            <div class="box"> img1.1</div>
+            <div class="box"> content1.1</div>
+        </div>
+        <div class="divs div2">
+            <div class="box"> img1.2</div>
+            <div class="box"> content1.2</div>
+        </div>
+        <div class="divs div3">
+            <div class="box"> content1.3</div>
+            <div class="box"> content1.3</div>
+            <div class="box d3-img"> img1.3</div>
+        </div>
+        <div class="divs div4">
+            <div class="box"> img1.4</div>
+            <div class="box"> content1.4</div>
+        </div>
+        <div class="divs div5">
+            <div class="box"> content1.5</div>
+        </div>
+    </div>
+
+    <div class="overflow">
+        <div class="content">
+            <div class="divs">
+                <div class="box"> img</div>
+                <div class="box"> content</div>
+            </div>
+            <div class="divs">
+                <div class="box"> img</div>
+                <div class="box"> content</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="divs">
+            div2.1
+        </div>
+        <div class="divs">
+            div2.2
+        </div>
+    </div>
+
+    <div class="overflow">
+        <div class="content">
+            <div class="divs">
+                overflow div2.1
+            </div>
+            <div class="divs">
+                overflow div2.1
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="divs">
+            footer div
+        </div>
+    </div>
+
+    
+</body>
+</html>
