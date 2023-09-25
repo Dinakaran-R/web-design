@@ -4,87 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cogniyon</title>
-    <style>
-
-        body{
-            background-color: green;
-            
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-            /* justify-content: center; */
-
-        }
-
-        .header{
-            background-color: white;
-            width: 50vw;
-        }
-
-        .content{
-            /* background-color: red; */
-            width: 50vw;
-        }
-
-        .overflow{
-            background-color: grey;
-            width: 100%;
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .divs{
-            /* background-color: white; */
-            margin-top: 5px;
-            margin-bottom: 5px;
-            display: grid;
-            text-align: center;
-            column-gap: 10px;
-            /* place-items: center; */
-        }
-
-        .box{
-            background-color: pink;
-            width: 100%;
-            height: fit-content;
-            min-height: 50px;
-            
-        }
-        
-        .div1{
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .div2, .div6{
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .d3-img{
-            background-color: gold;
-            grid-column: span 2;
-        }
-
-        .div4-grid, .div5-grid, .div7-grid{
-            display: grid;
-            background-color: white;
-            column-gap: 5px;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        .div8-grid{
-            display: grid;
-            background-color: white;
-            column-gap: 5px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        }
-
-        .div8-grid div:first-child {
-            grid-column: span 2;
-
-        }
-
-    </style>
+    <link rel="stylesheet" href="style/content.css">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  
 </head>
 <body>
 
@@ -94,43 +18,130 @@
     
     <div class="content">
         <div class="divs div1">
-            <div class="box"> img1.1</div>
-            <div class="box"> content1.2</div>
-        </div>
-        <div class="divs div2">
-            <div class="box"> img2.1</div>
-            <div class="box"> content2.2</div>
-        </div>
-        <div class="divs div3">
-            <div class="box"> content3.1</div>
-            <div class="box"> content3.2</div>
-            <div class="box d3-img"> img3.3</div>
-        </div>
-        <div class="divs div4">
-            <div class="box"> content4.1</div>
-            <div class="box"> content4.2</div>
-            <div class="box div4-grid"> 
-                <div> 4.3.1</div>
-                <div> 4.3.2</div>
-                <div> 4.3.3</div>
+            <div class="div1-img"><img src="img/div1.png"></div>
+            <div class="div1-content"> 
+                <div class="div1-title">Innovate and Adapt faster</div>
+                <!-- <div class="desc">Cogniyon is an award-winning cognitive assistant platform for 
+                    Software Engineers to develop enterprise-grade quality Software
+                    using Natural language swiftly with minimum efforts.
+                </div> -->
+                <div class="desc">Cogniyon is an award-winning cognitive assistant platform for 
+                    Software Engineers to develop enterprise-grade quality Software
+                    using Natural language swiftly with minimum efforts.
+                </div>
+                <div style="display: flex;">
+                <button class="btn-submit">Explore</button>
+                </div>
             </div>
         </div>
+
+        <div class="divs div2">
+            <div class="div2-img"> <img src="img/div2-img.png"></div>
+            <div class="div2-content"> 
+                <!-- <div class="div2-title">It's not one more No/Low code platform</div> -->
+                <div class="div2-title">It's not one more No/Low code platform</div>
+                <div class="desc">Meet your new cognitive assistant platform to
+                    help your software development life cycle process
+                </div>
+                <div>
+                <button class="btn-submit">Get Started</button>
+                <button class="btn-submit bg-white">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="divs div3">
+            <div class="div3-title">Our Partnership is a Win-Win</div>
+            <div class="div3-desc">
+            Many organizations bring value and opportunities for our customers.
+            Cogniyon Partner Program offers benefits tailored to meet partner's 
+            business objectives.
+            </div>
+            
+            <div class="div3-img"><img src="img/div3-img.png"></div>
+        </div>
+
+        <div class="divs div4">
+
+            <div class="div3-title">Features</div>
+            <div class="div3-desc">Our awesome platform features</div>
+            <div class="div4-grid"> 
+                <div class="div4-grid-feature"> 
+                    <div style="
+                        font-size: var(--d1-title-font-size);
+                        color: rgb(193, 91, 108);
+                        "><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                    <div class="div4-grid-feature-title">Easy to Use</div>
+                    <div class="div4-grid-feature-desc">Want to create something beautiful? Now you can, in hours, not weeks.</div>
+                    <div><a href="">Learn More</a></div>
+                </div>                
+                <div class="div4-grid-feature"> 
+                    <div style="font-size: var(--d1-title-font-size);
+                    color: orange;
+                    "><i class="fa fa-star-o" aria-hidden="true"></i></i></div>
+                    <div class="div4-grid-feature-title">Variety of Designs</div>
+                    <div class="div4-grid-feature-desc">That's a brilliant idea you've got. Build it, and they will come</div>
+                    <div><a href="">Learn More</a></div>
+                </div>
+                <div class="div4-grid-feature"> 
+                    <div style="font-size: var(--d1-title-font-size);
+                    color: rgb(17, 190, 17);
+                    "><i class="fa fa-shield" aria-hidden="true"></i></div>
+                    <div class="div4-grid-feature-title">Feel Our Design</div>
+                    <div class="div4-grid-feature-desc">Now you're one step closer to the optimal design workflow.</div>
+                    <div><a href="">Learn More</a></div>
+                </div>
+            </div>
+
+        </div>
+
         <div class="divs div5">
-            <div class="box"> content5.1</div>
+
+            <div class="div3-title">Our working strategy</div>
+            <div class="div3-desc">Cogniyon is designed strategically from the ground-up</div>
+            <div class="div4-grid"  style=" padding: 0 6vw;"> 
+                <div class="div5-grid-feature"> 
+                    <div class = "div5-grid-feature-img">
+                        <img src="img/div-5-f-1.png">
+                    </div>
+                    <div class="div5-grid-feature-title">ELIMINATE</div>
+                    <div class="div5-grid-feature-desc">Reinventing the Wheel; Reactive Measures; Monotonous</div>
+                </div>                
+                <div class="div5-grid-feature"> 
+                    <div class = "div5-grid-feature-img">
+                        <img src="img/div-5-f-2.png">
+                    </div> 
+                    <div class="div5-grid-feature-title">REDUCE</div>
+                    <div class="div5-grid-feature-desc">Human Dependency; Development Effort; Technical Debt; Time to Market</div>
+                </div>
+                <div class="div5-grid-feature"> 
+
+                    <div class = "div5-grid-feature-img">
+                        <img src="img/div-5-f-3.png">
+                    </div>
+
+                    <div class="div5-grid-feature-title">RAISE</div>
+                    <div class="div5-grid-feature-desc">Human Machine; Experience Speed of Innovation; Project Predictability;</div>
+                    
+                </div>
+            </div>
+
+            <!-- <div class="box"> content5.1</div>
             <div class="box"> content5.2</div>
             <div class="box div5-grid"> 
                 <div> 5.3.1</div>
                 <div> 5.3.2</div>
                 <div> 5.3.3</div>
-            </div>
+            </div> -->
+
         </div>
     </div>
 
     <div class="overflow">
         <div class="content">
             <div class="divs div6">
-                <div class="box"> content6.1</div>
-                <div class="box"> content6.2</div>
+                <div class="div6-title">START-UP OF THE YEAR 2019</div>
+                <div class="div6-desc">Winner of Start-up of the year 2019 in Asia Pacific region awarded by Startcon, Sydney, Australia.</div>
             </div>
         </div>
     </div>
@@ -164,12 +175,12 @@
     </div>
 
     <div class="content">
-        <div class="divs div8-grid">
-            <div class="box"> content8.1</div>
-            <div class="box"> content8.2</div>
-            <div class="box"> content8.3</div>
-            <div class="box"> content8.4</div>
-            <div class="box"> content8.5</div>
+        <div class="divs div9-grid">
+            <div class="box"> content9.1</div>
+            <div class="box"> content9.2</div>
+            <div class="box"> content9.3</div>
+            <div class="box"> content9.4</div>
+            <div class="box"> content9.5</div>
         </div>
     </div>
 

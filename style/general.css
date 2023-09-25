@@ -1,0 +1,149 @@
+:root{
+    /* font-size: 62.5%; */
+    --desc-color : grey;
+    --desc-font-size : 14px;
+    --d1-desc-font-size : clamp(6px,1.1vw,14px);
+
+    --d1-title-font-size : clamp(14px,2.6vw,40px);
+    --d2-title-font-size : clamp(9px,1.7vw,28px);
+    /* --d3-title-font-size : clamp(8px,1.9vw,32px); */
+    --d3-title-font-size : clamp(9px,1.7vw,28px);
+
+    --div4-grid-feature-title-font-size : clamp(6px,1.1vw,12px);
+    --div4-grid-feature-title-desc-size : clamp(5px,1.1vw,10px);
+
+    --d6-title-font-size : clamp(9px,1.7vw,30px);
+    --d6-desc-font-size : clamp(7px,1.1vw,12px);
+
+    --title-color : #2a2a2b;
+
+}
+
+body{
+    /* background-color: green;     */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.header{
+    background-color: grey;
+    width: 50vw;
+    height: 70px;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+}
+
+.content{
+    /* background-color: red; */
+    width: 50vw;
+    margin-bottom: 0;
+}
+
+.overflow{
+    background-color: rgb(21, 20, 20);
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vh;
+}
+
+
+
+@media only screen and (min-width: 320px) and  (max-width: 479px){
+
+:root{
+    --desc-color : grey;
+    --desc-font-size : 14px;
+    --d1-desc-font-size : 1rem;
+
+    --d1-title-font-size : 2rem;
+    --d2-title-font-size : 1.5rem;
+    --d3-title-font-size : 1.5rem;
+
+    --title-color : #2a2a2b;
+
+}
+body{
+        display:block;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+.header{
+    background-color: grey;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+}
+
+.overflow{
+    background-color: grey;
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+}
+
+.btn-submit{
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    padding: 2vw 2.1vw;
+}
+
+.div1-content{
+    order: 0;
+}
+
+.div1, .div2{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10vw;
+}
+
+.div2-content div:last-child{
+    align-items: center;
+    justify-content: center;
+    column-gap: 3vw;
+}
+
+.div2-content, .div3, .div3-desc{
+    text-align: center;
+}
+
+.div1-img, .div2-img{
+    width: 80vw;
+    height: 80vw;
+}
+
+.div3-img{
+    /* background-color: gold; */
+    grid-column: span 1;
+    width: 100%;
+}
+
+.desc, .div3-desc{
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    line-height: 1.5;
+
+}
+
+
+.div1, .div2, .div3, .div6, .div4-grid, .div5-grid, .div7-grid, .div8-grid, .div9-grid{
+    grid-template-columns: 1fr;
+}
+} 
+
+
