@@ -91,6 +91,12 @@ body{
     line-height: 1.5;
 }
 
+.divs{
+    /* background-color: white; */
+    margin-top: 15vw;
+}
+
+
 .overflow{
     background-color: grey;
     width: 100%;
@@ -111,6 +117,11 @@ body{
     order: 0;
 }
 
+/* DIVS */
+
+.div1{
+    margin-top: 7vw;
+}
 .div1, .div2{
     
     display: flex;
@@ -149,7 +160,9 @@ body{
 }
 
 /* DIV 4 */
-
+.div4, .div5{
+    row-gap: 0.5vw;
+}
 
 .div4-grid{
     /* background-color: red; */
@@ -179,7 +192,32 @@ body{
     font-size: 2.5rem;
 }
 
-.div1, .div2, .div3, .div6, .div4-grid, .div5-grid, .div7-grid, .div8-grid, .div9-grid{
+/* Div 5 */
+
+.div5-grid{
+    /* background-color: red; */
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    padding: 0 0;
+    row-gap: 10vw;
+}
+
+.div5-grid-feature{
+    align-items: center;
+    justify-content: center;
+    row-gap: 2vw;
+}
+
+.div5-grid-feature-img{
+    width: 80vw;
+    height: 100%;
+    margin-bottom: 0vw;
+    display: flex;
+}
+
+/* Div 6 */
+.div1, .div2, .div3, .div6, .div4-grid, .div7-grid, .div8-grid, .div9-grid{
     grid-template-columns: 1fr;
 }
 } 
