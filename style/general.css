@@ -44,7 +44,7 @@ body{
 }
 
 .overflow{
-    background-color: rgb(21, 20, 20);
+    background-color: rgb(15, 14, 14);
     width: 100%;
     display:flex;
     flex-direction: column;
@@ -68,9 +68,9 @@ body{
 
      --div4-grid-feature-title-font-size : 1.1rem;
     --div4-grid-feature-title-desc-size : 0.9rem;
-/*
-    --d6-title-font-size : 2rem;
-    --d6-desc-font-size :1.5rem; */
+
+    --d6-title-font-size : 1.7rem;
+    --d6-desc-font-size :1.1rem;
 
     --title-color : #2a2a2b;
 
@@ -98,7 +98,7 @@ body{
 
 
 .overflow{
-    background-color: grey;
+    background-color: rgb(15, 14, 14);
     width: 100%;
 }
 
@@ -217,6 +217,36 @@ body{
 }
 
 /* Div 6 */
+
+
+.div6{
+    /* background-color: blue; */
+    margin: 10vw 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 5vw;
+    row-gap: 6vw;
+}
+
+.div6-title{
+    /* background-color: red; */
+    font-size: var(--d6-title-font-size);
+    font-weight: 700;
+    text-align: left;
+    color: white;
+}
+
+.div6-desc{
+    color: white;
+    width: 100%;
+    font-size:var(--d6-desc-font-size);
+    text-align: left;
+    line-height: 1.5;
+}
+
+
 .div1, .div2, .div3, .div6, .div4-grid, .div7-grid, .div8-grid, .div9-grid{
     grid-template-columns: 1fr;
 }
