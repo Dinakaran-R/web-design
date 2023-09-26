@@ -119,14 +119,59 @@
     </div>
 
     <div class="content">
-        <div class="divs div7">
-            <div class="box"> content7.1</div>
-            <div class="box"> content7.2</div>
-            <div class="box"> content7.3</div>
-            <div class="box div7-grid"> 
-                <div> 7.4.1</div>
-                <div> 7.4.2</div>
-                <div> 7.4.3</div>
+        <div class="divs div4 div7">
+            <div class="div3-title">Super application for your business in a few minutes</div>
+            <div class="div3-desc">The time has come for you to pick up the phone and give us a call.</div>
+            <div class="div7-align">
+                <span class="div7-plan-desc">Monthly</span>
+                <span>
+                    <label class="toggle-container">
+                        <input type="checkbox">
+                        <span class="toggle-thumb"></span>
+                    </label>
+                </span>
+                <span class="div7-plan-desc">Annually</span>
+            </div>
+            <div class="div7-grid"> 
+                <div class="div7-grid-feature">
+                    <div class="div7-grid-feature-title">Demo</div>
+                    <div class="div7-grid-feature-desc">The website builder to help you grow - free from bugs and errors</div>
+                    <div class="div7-grid-feature-list">
+                        <ul>
+                            <li>Many Components</li>
+                            <li>Based on Bootstrap</li>
+                            <li>HTML,CSS,LESS</li>
+                            <li>Block Model</li>
+                        </ul>
+                    </div>
+                    <button class="plan-btn btn-submit" id="plan-btn-1">Download for Free</button>
+                </div>                
+                <div class="div7-grid-feature"> 
+                    <div class="div7-grid-feature-title">Pro</div>
+                    <div class="div7-grid-feature-desc">Get your idea out there in the way you want it. Start with Startup.</div>
+                    <div class="div7-grid-feature-list">
+                        <ul>
+                            <li>Many Components</li>
+                            <li>Based on Bootstrap</li>
+                            <li>HTML,CSS,LESS</li>
+                            <li>Block Model</li>
+                        </ul>
+                    </div>
+                    <button class="plan-btn btn-submit" id="plan-btn-2">Purchase for $489</button>
+                </div>
+                <div class="div7-grid-feature"> 
+                    <div class="div7-grid-feature-title">Business</div>
+                    <div class="div7-grid-feature-desc">Want to create something beautiful? Now you can. In hours, not weeks.</div>
+                    <div class="div7-grid-feature-list">
+                        <ul>
+                            <li>Many Components</li>
+                            <li>Based on Bootstrap</li>
+                            <li>HTML,CSS,LESS</li>
+                            <li>Block Model</li>
+                        </ul>
+                    </div>
+                    <button class="plan-btn btn-submit" id="plan-btn-3">Purchase for $989</button>
+                </div>
             </div>
         </div>
     </div>
@@ -156,5 +201,24 @@
         </div>
     </div>
 
+    <script>
+        const toggleSwitch = document.querySelector('input[type="checkbox"]');
+        const planButton = document.getElementsByClassName('plan-btn');
+
+        toggleSwitch.addEventListener('change', function() {
+            if (this.checked) {
+                console.log('Choosen Annual Plan');
+                planButton[0].textContent = "Download for Free"
+                planButton[1].textContent = "Purchase for $4899"
+                planButton[2].textContent = "Purchase for $9899"
+
+            } else {
+                console.log('Choosen Monthly Plan');
+                planButton[0].textContent = "Download for Free"
+                planButton[1].textContent = "Purchase for $489"
+                planButton[2].textContent = "Purchase for $989"
+            }
+        });
+    </script>
 </body>
 </html>

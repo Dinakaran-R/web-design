@@ -7,10 +7,15 @@
     --d2-title-font-size : clamp(9px,1.7vw,28px);
 
     --div4-grid-feature-title-font-size : clamp(6px,1.1vw,12px);
-    --div4-grid-feature-title-desc-size : clamp(5px,1.1vw,10px);
+    --div4-grid-feature-desc-font-size : clamp(5px,1.1vw,10px);
 
     --d6-title-font-size : clamp(9px,1.7vw,30px);
     --d6-desc-font-size : clamp(7px,1.1vw,12px);
+
+    --div7-grid-feature-title-font-size : clamp(9px,1.5vw,22px);
+    --div7-grid-feature-desc-font-size : clamp(5px,1.2vw,12px);
+    --div7-grid-feature-list-font-size : clamp(5px,1.2vw,12px);
+    /* --div7-grid-feature-list-font-size : clamp(0.8rem,1.5vw,12px) */
 
     --title-color : #2a2a2b;
 
@@ -59,10 +64,14 @@ body{
     --d2-title-font-size : 1.5rem;
 
     --div4-grid-feature-title-font-size : 1.1rem;
-    --div4-grid-feature-title-desc-size : 0.9rem;
+    --div4-grid-feature-desc-font-size : 0.9rem;
 
     --d6-title-font-size : 1.7rem;
     --d6-desc-font-size :1.1rem;
+
+    --div7-grid-feature-title-font-size : 1.3rem;
+    --div7-grid-feature-desc-font-size : 0.8rem;
+    --div7-grid-feature-list-font-size : 0.8rem;
 
     --title-color : #2a2a2b;
 
@@ -219,6 +228,63 @@ body{
 
 .div6-desc{
     width: 100%;
+}
+
+/* Div 7 */
+
+.div7-grid{
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    row-gap: 3vw;
+}
+
+.div7 .div3-title{
+    width: 100%;
+}
+.div7 .div3-desc{
+    width: 100%;
+}
+
+.div7-plan-desc{
+    color: rgb(76, 75, 75); 
+    font-size: var(--div7-grid-feature-list-font-size);
+    font-weight: 700;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.div7-grid-feature{
+    /* background-color: red; */
+    width: 80vw;
+    height: fit-content;
+    min-height: 20vw;
+    padding: 4vw 4vw 4vw 4vw;
+    row-gap: 2vw;
+}
+
+.div7-grid-feature ul li:before {
+    padding-right: 2vw;
+    font-size: 4vw;
+}
+
+.div7-align{
+    column-gap: 2vw;
+    margin-bottom: 4vw;
+}
+
+.toggle-container {
+    width: 1.6rem;
+    height: 0.8rem;
+}
+
+.toggle-thumb {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.toggle-container input[type="checkbox"]:checked + .toggle-thumb {
+    transform: translateX(0.8rem);
 }
 
 
