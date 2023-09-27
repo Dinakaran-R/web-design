@@ -420,12 +420,10 @@ color: black;
     transition: transform 0.2s ease-in-out;
 }
 
-
 .toggle-container input[type="checkbox"]:checked + .toggle-thumb {
     transform: translateX(1vw);
 }
 
-/* Hide the actual checkbox input */
 .toggle-container input[type="checkbox"] {
     display: none;
 }

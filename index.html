@@ -6,13 +6,39 @@
     <title>Cogniyon</title>
     <link rel="stylesheet" href="style/content.css">
     <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-    <div class="header">
-        Header
+    <div class="header" id="header">
+        <div>
+            <div class="menu">
+                <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="header-img"><img src="img/logo-f.png"><span class="close-button" onclick="closeMenu()">&times;</span></div>
+        
+        <div class="header-nav"> 
+            <a href="">Home</a>
+            <a href="">Features</a>
+            <a href="">Blog</a>
+            <a href="">Prices</a>
+        </div>
+        <div class="header-signin">
+            <a href="">Sign In</a>
+            <a href="" class="btn-submit">Sign Up</a>
+        </div>
     </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- <div class="nav-menu">
+
+    </div> -->
     
     <div class="content">
 
@@ -219,6 +245,24 @@
                 planButton[2].textContent = "Purchase for $989"
             }
         });
+    </script>
+
+    <script>
+        function openMenu() {
+            var x = document.getElementById("header");
+            if (x.className === "header") {
+                x.className += " mobile-view";
+            } else {
+                x.className = "header";
+            }
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function closeMenu(){
+            var x = document.getElementById("header");
+            x.classList.remove('mobile-view');
+            document.getElementById('overlay').style.display = 'none';
+        }
     </script>
 </body>
 </html>
