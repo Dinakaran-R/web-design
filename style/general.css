@@ -1,9 +1,16 @@
 :root{
     --desc-color : grey;
 
-    --header-nav-font-size : clamp(4px,1.1vw,12px);
+    /* --header-nav-font-size : clamp(4px,1.1vw,12px); */
+    
+    --p-font-size : clamp(7px,1.1vw,16px);
+    --h3-font-size : clamp(6px,1.1vw,14px);
+    --header-nav-font-size : var(--h3-font-size);
+    --summary-font-size : clamp(5px,1.0vw,14px);
+    --d8-address-font-size : clamp(4px,1.0vw,12px);
+    --h2-font-size : clamp(9px,1.7vw,28px);
 
-    --desc-font-size : clamp(6px,1.1vw,14px);
+    --desc-font-size : clamp(7px,1.1vw,14px);
 
     --d1-title-font-size : clamp(14px,2.6vw,40px);
     --d2-title-font-size : clamp(9px,1.7vw,28px);
@@ -32,9 +39,51 @@ body{
 
 }
 
+h1{
+    margin: 0;
+    font-size: var(--d1-title-font-size);
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+h2{
+    margin: 0;
+    font-size: var(--d2-title-font-size);
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+h3{
+    margin: 0;
+    font-size: var(--h3-font-size);
+    font-weight: 700;
+    color: var(--title-color);
+    line-height: 1.5;
+}
+
+p{
+    margin: 0;
+    color: var(--desc-color);
+    font-size:var(--p-font-size);
+    line-height: 1.5;
+}
+
+summary{
+    color: var(--desc-color);
+    font-size: var(--summary-font-size);
+    line-height: 1.5;
+
+}
+
 .content{
     /* background-color: red; */
-    width: 50vw;
+    /* width: clamp(60vw, calc(60vw + 30px), 60vw); */
+    /* width: calc(40% + 35vw);; */
+    /* width: calc(60vw*(1)); */
+    /* max-width: 90vw; */
+    width: 60vw;
+    /* margin-left: 15%; */
+    /* margin-right: 15%; */
     margin-bottom: 0;
 }
 
@@ -82,6 +131,14 @@ form input[type=text], textarea{
 @media only screen and (min-width: 320px) and  (max-width: 479px){
 
 :root{
+
+    --p-font-size : 1.1rem;
+    --h2-font-size : 1.5rem;
+    --h3-font-size : 1.2rem;
+    --header-nav-font-size : var(--h3-font-size);
+    --summary-font-size : 1rem;
+    --d8-address-font-size : 0.9rem;
+
     --desc-color : grey;
     --desc-font-size : 1rem;
 
@@ -120,7 +177,7 @@ body{
 .btn-submit{
     font-weight: 700;
     border-radius: 5px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 2vw 2.1vw;
 }
 
@@ -163,8 +220,9 @@ form input[type=text], textarea{
     margin-top: 7vw;
 }
 
-.div1-content{
+.div1-content, .div2-content, .div3, .div4{
     order: 0;
+    row-gap: 2.5vw;
 }
 
 .div1, .div2{
@@ -202,7 +260,7 @@ form input[type=text], textarea{
 
 /* DIV 4 */
 .div4, .div5{
-    row-gap: 0.5vw;
+    row-gap: 2.5vw;
 }
 
 .div4-grid{
@@ -267,11 +325,15 @@ form input[type=text], textarea{
     row-gap: 6vw;
 }
 
-.div6-title{
+/* .div6-title{
     text-align: left;
 }
 
 .div6-desc{
+    width: 100%;
+} */
+
+.div6 p{
     width: 100%;
 }
 
@@ -285,6 +347,10 @@ form input[type=text], textarea{
 }
 
 .div7 .div3-title{
+    width: 100%;
+}
+
+.div7 h2, .div7 p{
     width: 100%;
 }
 
@@ -347,9 +413,11 @@ form input[type=text], textarea{
     grid-template-columns: 1fr;
     row-gap: 3vw;
 }
+
 .footer div:first-child {
     grid-column: span 1;
 }
+
 .footer-contents-desc{
     display: flex;
     flex-direction: row;
@@ -366,6 +434,10 @@ form input[type=text], textarea{
 
 .copyright{
     margin-top: 6vw;
+}
+
+.copyright .footer-grid-feature{
+    color:rgb(63, 63, 63);
 }
 
 .div1, .div2, .div3, .div6, .div4-grid, .div8-grid{

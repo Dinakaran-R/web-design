@@ -1,6 +1,6 @@
 .header{
     /* background-color: grey; */
-    width: 50vw;
+    width: 60vw;
     height: 5vw;
     text-align: center;
     color: white;
@@ -84,8 +84,10 @@
     width: 12vw;
     height: 12vw;
     left: 0;
-    background-color: rgb(50, 50, 50);
+    /* background-color: rgb(50, 50, 50);
+    background-color: red; */
     border-radius: 50%;
+    /* border: 1px solid #e9e9e9; */
 }
 
 
@@ -103,7 +105,7 @@
     background-color: #5a5a5a;
 }
 .header div:first-child i{
-    color: white;
+    color: #5a5a5a;
     font-size: 1.8rem;
 }
 
@@ -141,20 +143,23 @@
 }
 
 .header.mobile-view .header-img .close-button{
+    /* background-color: red; */
     display: inline-block;
     cursor: pointer;
-    color: rgb(73, 72, 72);
+    color: rgb(183, 179, 179);
     font-size: 2rem;
 
 }
+
 .header.mobile-view .header-img{
     background-color: white;
-    width: 100%;
+    width: 80%;
     height: 20vw;
     margin-top: 4vw;
+    margin-left: 5vw;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .header.mobile-view .header-img img{
@@ -167,7 +172,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    row-gap: 3vw;
+    row-gap: 4vw;
     font-size: 1rem;
     font-weight: 700;
 }
@@ -183,7 +188,7 @@
     font-weight: 700;
     color: blue;
     margin-left: 5vw;
-    margin-top: 5vw;
+    margin-top: 4vw;  /* Depends on .header.mobile-view .header-nav's row-gap */
 } 
 
 .header.mobile-view div:first-child{
