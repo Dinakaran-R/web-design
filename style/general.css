@@ -2,13 +2,13 @@
     --desc-color : grey;
 
     /* --header-nav-font-size : clamp(4px,1.1vw,12px); */
-    
-    --p-font-size : clamp(7px,1.1vw,16px);
-    --h3-font-size : clamp(6px,1.1vw,14px);
-    --header-nav-font-size : var(--h3-font-size);
-    --summary-font-size : clamp(5px,1.0vw,14px);
-    --d8-address-font-size : clamp(4px,1.0vw,12px);
     --h2-font-size : clamp(9px,1.7vw,28px);
+    --h3-font-size : clamp(6px,1.1vw,14px);
+    --p-font-size : clamp(7px,1.1vw,16px);
+    --summary-font-size : clamp(5px,1.0vw,14px);
+    --header-nav-font-size : var(--h3-font-size);
+    --d8-address-font-size : clamp(4px,1.0vw,12px);
+    
 
     --desc-font-size : clamp(7px,1.1vw,14px);
 
@@ -48,7 +48,7 @@ h1{
 
 h2{
     margin: 0;
-    font-size: var(--d2-title-font-size);
+    font-size: var(--h2-font-size);
     font-weight: 700;
     color: var(--title-color);
 }
@@ -75,15 +75,16 @@ summary{
 
 }
 
+figure{
+    margin: 0;
+}
+
+figcaption p{
+    font-size: clamp(5px,1.1vw,14px);
+}
+
 .content{
-    /* background-color: red; */
-    /* width: clamp(60vw, calc(60vw + 30px), 60vw); */
-    /* width: calc(40% + 35vw);; */
-    /* width: calc(60vw*(1)); */
-    /* max-width: 90vw; */
     width: 60vw;
-    /* margin-left: 15%; */
-    /* margin-right: 15%; */
     margin-bottom: 0;
 }
 
@@ -142,7 +143,7 @@ form input[type=text], textarea{
     --desc-color : grey;
     --desc-font-size : 1rem;
 
-    --d1-title-font-size : 2rem;
+    /* --d1-title-font-size : 2rem;
     --d2-title-font-size : 1.5rem;
 
     --div4-grid-feature-title-font-size : 1.1rem;
@@ -152,7 +153,7 @@ form input[type=text], textarea{
     --d6-desc-font-size :1.1rem;
 
     --div7-grid-feature-title-font-size : 1.3rem;
-    --div7-grid-feature-desc-font-size : 0.8rem;
+    --div7-grid-feature-desc-font-size : 0.8rem; */
     --div7-grid-feature-list-font-size : 0.8rem;
 
     --title-color : #2a2a2b;
@@ -209,6 +210,10 @@ form input[type=text], textarea{
     border-radius: 2vw;
 } 
 
+figcaption p{
+    font-size: 0.8rem;
+}
+
 
 /* DIVS */
 
@@ -248,7 +253,11 @@ form input[type=text], textarea{
     text-align: center;
 }
 
-.div3-img{
+.div3 h2 {
+    width: 100%;
+}
+
+.div3 figure{
     grid-column: span 1;
 }
 
@@ -325,14 +334,6 @@ form input[type=text], textarea{
     row-gap: 6vw;
 }
 
-/* .div6-title{
-    text-align: left;
-}
-
-.div6-desc{
-    width: 100%;
-} */
-
 .div6 p{
     width: 100%;
 }
@@ -344,10 +345,6 @@ form input[type=text], textarea{
     height: fit-content;
     flex-direction: column;
     row-gap: 3vw;
-}
-
-.div7 .div3-title{
-    width: 100%;
 }
 
 .div7 h2, .div7 p{
@@ -380,7 +377,7 @@ form input[type=text], textarea{
     font-size: 4vw;
 }
 
-.div7-align{
+.div7-plan-align{
     column-gap: 2vw;
     margin-bottom: 4vw;
 }
