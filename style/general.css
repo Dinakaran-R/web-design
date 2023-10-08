@@ -13,7 +13,7 @@
     --p-font-size : 16px;
     --summary-font-size :14px;
     --header-nav-font-size : var(--h3-font-size);
-    --d8-address-font-size : 12px;
+    --d8-address-font-size : 14px;
     
     --desc-font-size : clamp(7px,1.1vw,14px);
 
@@ -76,11 +76,17 @@ p{
     line-height: 1.5;
 }
 
+/* summary is no longer needed */
 summary{
     color: var(--desc-color);
     font-size: var(--summary-font-size);
     line-height: 1.5;
+}
 
+small{
+    color: var(--desc-color);
+    font-size: var(--summary-font-size);
+    line-height: 1.5;
 }
 
 figure{

@@ -235,7 +235,8 @@ header{
         --summary-font-size : clamp(12px,2.5vw,16px);
         --header-nav-font-size : var(--h3-font-size);
         /* --d8-address-font-size : clamp(5px,1.2vw,12px); */
-        --d8-address-font-size : 0.75rem;
+        /* --d8-address-font-size : 0.75rem; */
+        --d8-address-font-size : 0.8rem;
         --div7-grid-feature-title-font-size : 1.3rem;
         --div7-grid-feature-desc-font-size : 0.8rem;
         --div7-grid-feature-list-font-size : 0.8rem;

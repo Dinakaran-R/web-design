@@ -408,11 +408,13 @@ color: black;
     margin: 3vw 0;
 }
 
-.div8-address{
+address{
+    font-style: normal;
     color: var(--desc-color);
     font-size:var(--d8-address-font-size);
     line-height: 1.5;
 }
+
 
 /* Footer */
 
