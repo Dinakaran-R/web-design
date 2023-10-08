@@ -228,12 +228,18 @@ header{
         --header-nav-font-size : var(--h3-font-size);
         --d8-address-font-size : clamp(4px,1.0vw,12px); */
 
-        --h2-font-size : clamp(18px, 3vw,28px);
-        --h3-font-size : clamp(8px,1.8vw,16px);
-        --p-font-size : clamp(8px,1.8vw,16px);
-        --summary-font-size : clamp(8px,1.4vw,14px);
+        --h2-font-size : clamp(20px, 4vw,28px);
+        --h3-font-size : clamp(14px,2.5vw,16px);
+        --p-font-size : clamp(12px,2.5vw,16px);
+        /* --p-font-size : 1.1rem; */
+        --summary-font-size : clamp(12px,2.5vw,16px);
         --header-nav-font-size : var(--h3-font-size);
-        --d8-address-font-size : clamp(5px,1.2vw,12px);
+        /* --d8-address-font-size : clamp(5px,1.2vw,12px); */
+        --d8-address-font-size : 0.75rem;
+        --div7-grid-feature-title-font-size : 1.3rem;
+        --div7-grid-feature-desc-font-size : 0.8rem;
+        --div7-grid-feature-list-font-size : 0.8rem;
+
     }
     
     .content{
@@ -279,6 +285,21 @@ header{
 }
 
 @media only screen and (min-width: 480px) and  (max-width: 768px){
+
+    form{
+        width: 100%;
+    }
+    
+    form textarea{
+        height:100px;
+        min-height:100px;
+    }
+
+    form input[type=text], textarea{
+        border-radius: 0.7vw;
+    } 
+    
+
     .div4-grid{
         column-gap: 2vw;
         row-gap: 2vw;

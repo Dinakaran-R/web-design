@@ -330,7 +330,7 @@
     content: "\f058";
     font-family: FontAwesome;
     padding-right: 0.5vw;
-    font-size: 1vw;
+    font-size: 15px;
 }
 
 .div7-grid-feature:first-child ul li:before{
