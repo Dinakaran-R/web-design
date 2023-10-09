@@ -30,14 +30,6 @@
     border: 1px solid #a8a8a8;
 }
 
-.box{
-    background-color: pink;
-    width: 100%;
-    height: fit-content;
-    min-height: 50px;
-    
-}
-
 .desc{
     color: var(--desc-color);
     font-size:var(--desc-font-size);
@@ -45,8 +37,6 @@
     margin-bottom: clamp(4px, 1.0vw, 20px);
     line-height: 1.5;
 }
-
-
 
 /* DIV 1 */
 
@@ -87,8 +77,6 @@
     font-weight: 700;
     color: var(--title-color);
 }
-
-
 
 /* DIV 2 */
 
@@ -473,4 +461,46 @@ address{
 }
 
 
+
+@media only screen and (min-width: 650px) and  (max-width: 800px){
+
+    form{
+        width: 100%;
+    }
+    
+    form textarea{
+        height:100px;
+        min-height:100px;
+    }
+
+    form input[type=text], textarea{
+        border-radius: 0.7vw;
+    } 
+    
+
+    .div4-grid{
+        column-gap: 2vw;
+        row-gap: 2vw;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .div5-grid{
+        column-gap: 2vw;
+        row-gap: 2vw;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 0;
+    }
+
+    .div5-grid-feature-img{
+        width: 100%;
+        height: 24vw;
+    }
+    
+    .div7-grid{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2vw;
+        row-gap: 2vw;
+    
+    }
+}
 

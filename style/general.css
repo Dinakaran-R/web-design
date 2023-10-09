@@ -161,32 +161,85 @@ footer{
     align-items: center;
 }
 
-@media only screen and (min-width: 320px) and  (max-width: 479px){
+
+/* For Laptop */
+
+@media only screen and (min-width: 650px) and  (max-width: 1080px){
+    :root{
+
+        --h2-font-size : clamp(20px, 4vw,28px);
+        --h3-font-size : clamp(14px,2.5vw,16px);
+        --p-font-size : clamp(12px,2.5vw,16px);
+        /* --p-font-size : 1.1rem; */
+        --summary-font-size : clamp(12px,2.5vw,16px);
+        --header-nav-font-size : var(--h3-font-size);
+        --d8-address-font-size : 0.8rem;
+        --div7-grid-feature-title-font-size : 1.3rem;
+        --div7-grid-feature-desc-font-size : 0.8rem;
+        --div7-grid-feature-list-font-size : 0.8rem;
+
+    }
+    
+    .content{
+        width: 90%;
+    }
+
+    .btn-submit{
+        font-size: var(--h3-font-size);
+        padding: 0.7vw 0.8vw;
+    }
+    
+    .div2-img{
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .div5-grid-feature-img{
+        width: 22vw;
+        height: 15vw;
+    }
+
+    .div6{
+        margin: 1vw 0;
+    }
+
+    .div6 p{
+        width: 30vw;
+    }
+
+    .div7 h2, .div7 p{
+        width: 90%;
+    }
+
+}
+
+
+@media only screen and (min-width: 290px) and  (max-width: 650px){
 
 :root{
 
-    --p-font-size : 1.1rem;
-    --h2-font-size : 1.5rem;
-    --h3-font-size : 1.2rem;
+    /* --p-font-size : 1.1rem; */
+    --p-font-size : 4.5vw;
+    /* --h2-font-size : 1.5rem;*/
+    --h2-font-size : 7vw;
+    /* --h3-font-size : 1.2rem;  */
+    --h3-font-size : 4.5vw;
     --header-nav-font-size : var(--h3-font-size);
-    --summary-font-size : 1rem;
-    --d8-address-font-size : 0.9rem;
+    /* --summary-font-size : 1rem; */
+    --summary-font-size : 4.4vw;
+    /* --d8-address-font-size : 0.9rem; */
+    --d8-address-font-size : 4.3vw;
 
     --desc-color : grey;
-    --desc-font-size : 1rem;
+    /* --desc-font-size : 1rem; */
+    --desc-font-size : 4.4vw;
 
-    /* --d1-title-font-size : 2rem;
-    --d2-title-font-size : 1.5rem;
-
-    --div4-grid-feature-title-font-size : 1.1rem;
-    --div4-grid-feature-desc-font-size : 0.9rem;
-
-    --d6-title-font-size : 1.7rem;
-    --d6-desc-font-size :1.1rem; */
-
-    --div7-grid-feature-title-font-size : 1.3rem;
-    --div7-grid-feature-desc-font-size : 0.8rem;
-    --div7-grid-feature-list-font-size : 0.8rem;
+    /* --div7-grid-feature-title-font-size : 1.3rem; */
+    --div7-grid-feature-title-font-size : 4.7vw;
+    /* --div7-grid-feature-desc-font-size : 0.8rem; */
+    --div7-grid-feature-desc-font-size : 4.1vw;
+    /* --div7-grid-feature-list-font-size : 0.8rem; */
+    --div7-grid-feature-list-font-size : 4.1vw;
 
     --title-color : #2a2a2b;
 
@@ -218,7 +271,8 @@ section:nth-child(9){
 .btn-submit{
     font-weight: 700;
     border-radius: 5px;
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
+    font-size: 4.3vw;
     padding: 2vw 2.1vw;
 }
 
@@ -250,7 +304,8 @@ form input[type=text], textarea{
 } 
 
 figcaption p{
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
+    font-size: 4.2vw;
 }
 
 footer{
@@ -338,6 +393,7 @@ footer{
 /* display : flex */
 .div4-grid-feature{
     /* width: 60vw; */
+    width: 100%;
     height:100%;
     min-height: 20vw;
     padding: 5vw 4vw 5vw 4vw;
@@ -345,7 +401,8 @@ footer{
 }
 
 .div4 a{
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: 4.4vw;
 }
 
 .div4-grid-feature i{
